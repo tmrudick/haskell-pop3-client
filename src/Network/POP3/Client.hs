@@ -77,7 +77,10 @@ module Network.POP3.Client (
         getSize,
         getMessage,
         getFirstNLines,
-        getHeaders
+        getHeaders,
+		
+		-- * Deleting messages
+		deleteMessage
 
     ) where
 
@@ -163,6 +166,12 @@ getSize n = sendReceive ["LIST", show n] singleLine (secondToken toInt)
 --   The message ID should be in the range [1..'getNumberOfMessages'].
 getMessage :: MessageID -> POP3 String
 getMessage n = sendReceive ["RETR", show n] multiLine Right
+
+-- | Marks a message as to be deleted and returns a Bool which indicates a success. 
+--	The message ID should be in the range [1..'getNumberOfMessages']. 
+--	The message will actually be deleted from the server on QUIT.
+deleteMessage :: MessageID -> POP3 String
+deleteMessage n = sendReceive ["DELE", show n] singleLine Right
 
 -- | Retrieves a the headers and the first n lines of a message from the server 
 --   and returns it parsed as a 'Message'.
