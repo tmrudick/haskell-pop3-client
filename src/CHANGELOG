@@ -1,0 +1,23 @@
+CHANGELOG of pop3-client
+------------------------
+
+Version 0.1.3:
+- Exported some types needed to write type declarations in client code
+- Refactored withPOP3 to take a single POP3Account record with all connection and authentication info
+- The authenticate function became private and doesn't need to be called by client code anymore
+- Added error handling to the POP3 monad
+- Added and example to the Haddock documentation on parsing email headers with hsemail
+
+Version 0.1.2:
+- Added this changelog
+- Created repository on patch-tag.com with the sources
+
+Version 0.1.1:
+- Fixed license mentioned in the source file
+- Fixed base library dependency in cabal file
+
+Version 0.1:
+- First publicly released version
+- Supports all major POP3 commands except the delete command and the APOP
+  authentication mechanism
+
