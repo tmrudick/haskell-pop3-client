@@ -1,6 +1,9 @@
 CHANGELOG of pop3-client
 ------------------------
 
+Version 0.1.4:
+- Adding deleteMessage to allow marking messages on the server for deletion
+
 Version 0.1.3:
 - Exported some types needed to write type declarations in client code
 - Refactored withPOP3 to take a single POP3Account record with all connection and authentication info
