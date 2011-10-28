@@ -24,8 +24,7 @@
 --main :: IO ()
 --main = do
 --    let account = POP3Account \"pop3.example.org\" defaultPort \"my_username\" \"my_password\"
---    messages <- withPOP3 account $ do
---        message <- withPOP3 account $ do
+--    message <- withPOP3 account $ do
 --        total <- getNumberOfMessages
 --        getMessage total
 --    putStrLn $ show message
