@@ -4,7 +4,7 @@
 -- Copyright   :  (c) 2011 Tom Rudick (v0.1.4 changes only)
 -- License     :  BSD3
 --
--- Maintainer  :  peter@vdbrand.nl, tmrudick@gmail.com
+-- Maintainer  :  tmrudick@gmail.com
 -- Stability   :  provisional
 -- Portability :  portable
 --
