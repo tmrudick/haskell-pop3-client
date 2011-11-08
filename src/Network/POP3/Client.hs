@@ -1,7 +1,6 @@
 -- |
 -- Module      :  Network.POP3.Client
--- Copyright   :  (c) 2009 Peter van den Brand
--- Copyright   :  (c) 2011 Tom Rudick (v0.1.4 changes only)
+-- Copyright   :  (c) 2009 Peter van den Brand, (c) 2011 Tom Rudick (v0.1.4+)
 -- License     :  BSD3
 --
 -- Maintainer  :  tmrudick@gmail.com
